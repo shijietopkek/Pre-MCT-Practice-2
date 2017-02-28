@@ -1,7 +1,5 @@
 import random
 
-
-
 def display():
     global arr1, arr2
     print("Matrix 1")
@@ -23,8 +21,8 @@ def sum_matrix():
     row_2, col_2 = len(arr2[0]), len(arr2)
     
     if row_1 == row_2 and col_1 == col_2:
-        for i in range(row_1):
-            for j in range(col_1):
+        for i in range(col_1):
+            for j in range(row_1):
                 print(arr1[i][j] + arr2[i][j], end=' ')
                 
             print()
@@ -103,11 +101,6 @@ for i in range(2):
 display()
 sum_matrix()
 product_matrix()
-        
-
-
-        
-    
         
 
 
