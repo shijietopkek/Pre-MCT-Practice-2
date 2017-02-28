@@ -61,6 +61,7 @@ def product_matrix():
     
 #main
 arr=[]
+end_program = False
 for i in range(2):
     print("Matrix {}".format(i+1))
     accepted = True
@@ -81,6 +82,7 @@ for i in range(2):
             accepted1= False
     if n=="-1" or m=="-1":
         print("Bye!")
+        end_program=True
         break;
     m = int(m)
     n = int(n)
@@ -98,9 +100,10 @@ for i in range(2):
             for k in range(n):
                 number = random.randint(1,9)
                 arr2[j][k] = number
-display()
-sum_matrix()
-product_matrix()
-        
 
+if end_program != True:
+    display()
+    sum_matrix()
+    product_matrix()
+                
 
